@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8"/>
         <title>TopMusic</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+        <link rel="stylesheet" href="styles.css"/>
     </head>
     
     <body>
@@ -11,36 +13,71 @@
         </header>
 
         <nav>
-            <ul>
+            <ul class="nav">
                 <li>
-                    <a href="https://sp.senai.br/unidade/campinas/" target="_blank">Login</a>
+                    <a href="#" target="_blank">Login</a>
                 </li>
                 <li>
-                    <a href="https://www.bosch.com.br/" target="_blank">Cadastro</a>
+                    <a href="#" target="_blank">Cadastro</a>
                 </li>
                 <li>
-                    <a href="https://www.bosch.com.br/" target="_blank">Sobre nós</a>
+                    <a href="#" target="_blank">Sobre nós</a>
                 </li>
             </ul>
         </nav>
 
         <main>
-            <article>
+            <article class="prf">
                 <h1>Sobre nós</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat nulla nec tincidunt consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis tempor scelerisque tellus, ac viverra augue ultricies non. Sed id sollicitudin ante, eget vulputate eros. Praesent euismod mauris nec turpis venenatis lobortis. Nam sed imperdiet ligula. Cras leo felis, mattis vel maximus at, blandit vitae risus. Sed ligula turpis, viverra sed blandit eget, malesuada nec enim. Aenean iaculis efficitur dui, eu mollis turpis pulvinar non. Aenean at sem at libero scelerisque venenatis.</p>
-            <aside>
-                <figure>
-                    <img src="https://th.bing.com/th/id/OIP.6kG_NzrZ2j_8HZm-p58IhgAAAA?rs=1&pid=ImgDetMain" alt="Violão" width="300"/>
-                    <figcaption>Violão</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://http2.mlstatic.com/teclado-musical-de-61-teclas-y-5-octavas-con-entrada-usb-D_NQ_NP_955582-MLM25572878544_052017-F.jpg" alt="Teclado" width="300"/>
-                    <figcaption>Teclado</figcaption>
-                </figure>
-            </aside>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat nulla nec tincidunt consequat.</p>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis tempor scelerisque tellus, ac viverra augue ultricies non. Sed id sollicitudin ante, eget vulputate eros.</p>
+                <p>Praesent euismod mauris nec turpis venenatis lobortis. Nam sed imperdiet ligula. Cras leo felis, mattis vel maximus at, blandit vitae risus.</p>
+                <p>Sed ligula turpis, viverra sed blandit eget, malesuada nec enim. Aenean iaculis efficitur dui, eu mollis turpis pulvinar non. Aenean at sem at libero scelerisque venenatis.</p>
+            </article>
+
+            <section id="galeria" class="gallery-container">
+		
+                <div class="gallery">
+                  <img src="https://dw0jruhdg6fis.cloudfront.net/producao/31221636/G/teclado-yamaha-psr-sx600.webp" alt="baralho do palmeiras" width="600" height="400">
+                    <div class="desc">
+                        <p>Teclado</p>
+                        <h1>R$ 539,99</h1>
+                        <a href="https://www.google.com/?hl=pt-BR" class="btn">Adicionar ao carrinho</a>
+                    </div>
+              </div>
+              
+              <div class="gallery">
+                  <img src="https://jbinstrumentos.com.br/wp-content/uploads/2021/04/Violao-7-Cordas-I-Especial-frente-ok.jpg" alt="uno" width="600" height="400">
+                <div class="desc">
+                    <p>Violão</p>
+                    <h1>R$ 389,99</h1>
+                    <a href="https://www.google.com/?hl=pt-BR" class="btn">Adicionar ao carrinho</a>
+                </div>
+              </div>
+
+              <div class="gallery">
+                <img src="https://images.tcdn.com.br/img/img_prod/789576/bateria_musical_sonotec_premium_dx720_vinho_wr_1377866_1_7a0b3e3c1dca342fda9eca6f8bc17213.png" alt="uno" width="600" height="400">
+              <div class="desc">
+                  <p>Bateria</p>
+                  <h1>R$ 2559,99</h1>
+                  <a href="https://www.google.com/?hl=pt-BR" class="btn">Adicionar ao carrinho</a>
+              </div>
+            </div>
+
+            <div class="gallery">
+                <img src="https://cdn.awsli.com.br/600x700/2638/2638039/produto/23010534595339bb86c.jpg" alt="uno" width="600" height="400">
+              <div class="desc">
+                  <p>Contra-baixo</p>
+                  <h1>R$ 759,99</h1>
+                  <a href="https://www.google.com/?hl=pt-BR" class="btn">Adicionar ao carrinho</a>
+              </div>
+            </div>
+
+            </section>
         </main>
         <footer>
-        <hr/><address>
+        <hr>
+        <address>
             <p>Criado por <a href="#">Thainara Marques &lt;3</a></p>
             <p>Copyright 2025 © Todos os direitos reservados.</p>
         </address>

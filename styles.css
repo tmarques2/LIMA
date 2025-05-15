@@ -80,6 +80,67 @@ aside{
     justify-content: center;
 }
 
+.btn{
+    margin: 15px;
+    padding: 10px 20px;
+    color: purple;
+    font-size: 18px;
+    text-decoration: none; 
+    font-weight: bold; 
+    display: inline-block;
+    border: 3px solid purple;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.0em;
+    font-weight: 550;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  .btn:hover { 
+    background: purple;
+    color: white;
+    font-size: 1.2em;
+  }
+  .gallery-container {
+    margin: 50px;
+    display: flex;
+    justify-content: center; /* Alinha os itens no centro horizontalmente */
+    align-items: center; /* Alinha os itens no centro verticalmente (caso haja mais de uma linha de itens) */
+    flex-wrap: wrap; /* Permite que as imagens "quebrem" para a linha seguinte quando o espaço for necessário */
+    gap: 15px; /* Espaçamento entre as imagens */
+  }
+  div.gallery {
+    margin: 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que a descrição fique no fundo da galeria */
+    background-color: #f1f1f1; /* Cor de fundo para a galeria */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+    flex-wrap: wrap;
+  }
+  
+  
+  div.gallery img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do item */
+    height: 300px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+  }
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  div.btn {
+    align-items: center;
+  }
+  
 footer{
     background-color: darkblue;
     padding: 40px;
