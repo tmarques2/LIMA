@@ -138,7 +138,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 50px;
+  gap: 150px;
   padding: 50px;
   flex-wrap: wrap;
 }

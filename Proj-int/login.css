@@ -1,17 +1,12 @@
 .fundoDireita {
   font-family: "Turret Road", sans-serif;
-  background-image: url('img/fundoLoginPreto.png');
+  background-image: url('img/fundoGuitarra.png');
   height: 100vh;
   margin: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 5%;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  position: relative;
-  width: 100%;
 }
 
 .fundoDireita::before {
@@ -19,24 +14,18 @@
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
 .fundoEsquerda {
   font-family: "Turret Road", sans-serif;
-  background-image: url('img/fundoInvertido.png');
+  background-image: url('img/bateriafundo.png');
   height: 100vh;
   margin: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-left: 5%;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  position: relative;
-  width: 100%;
 }
 
 .fundoEsquerda::before {
@@ -44,7 +33,6 @@
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
