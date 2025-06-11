@@ -1,6 +1,7 @@
 .fundoDireita {
   font-family: "Turret Road", sans-serif;
   background-image: url('img/fundoGuitarra.png');
+  background-size: cover;
   height: 100vh;
   margin: 0;
   display: flex;
@@ -20,6 +21,7 @@
 .fundoEsquerda {
   font-family: "Turret Road", sans-serif;
   background-image: url('img/bateriafundo.png');
+  background-size: cover;
   height: 100vh;
   margin: 0;
   display: flex;
@@ -67,6 +69,18 @@ header {
   box-shadow: 0 0 10px #000;
   width: 400px;
   height: 400px;
+  text-align: center;
+  z-index: 1;
+  margin-right: 100px;
+}
+
+.cadastro2-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  width: 400px;
+  height: 600px;
   text-align: center;
   z-index: 1;
   margin-right: 100px;
