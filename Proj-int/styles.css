@@ -6,7 +6,7 @@
 
 body {
   background-color: black;
-  font-family: "Turret Road", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .top-section {
@@ -15,6 +15,14 @@ body {
   background-position: center;
   min-height: 100vh;
   position: relative;
+  color: white;
+  width: 100%;
+}
+
+.top-section-about {
+  background-image: url('img/fundoSobreNos.png');
+  background-size: cover;
+  min-width:20px;
   color: white;
   width: 100%;
 }
@@ -68,7 +76,6 @@ body {
   font-size: 16px;
   outline: none;
   box-sizing: border-box;
-  font-family: "Turret Road", sans-serif;
 }
 
 .search-bar input[type="text"]::placeholder {
@@ -114,7 +121,6 @@ body {
 }
 
 .hero-content h1{
-  font-family: "Limelight", sans-serif;
   font-size: 5rem;
   margin: 30px;
 }
@@ -132,6 +138,7 @@ body {
 }
 
 .button {
+  margin: 20px;
   padding: 0.75rem 1.5rem;
   border: 2px solid white;
   border-radius: 5px;
@@ -156,8 +163,7 @@ body {
 }
 
 
-.sessao-categorias h1{
-  font-family: "Limelight", sans-serif;
+.sessao-categorias h3{
   color: white;
   font-size: 80px;
   text-align: center;
@@ -187,6 +193,79 @@ body {
 .categoria img{
   width: 200px;
   border-radius: 50%;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center; /* Alinha os itens no centro horizontalmente */
+  align-items: center; /* Alinha os itens no centro verticalmente (caso haja mais de uma linha de itens) */
+  flex-wrap: wrap; /* Permite que as imagens "quebrem" para a linha seguinte quando o espaço for necessário */
+  gap: 15px; /* Espaçamento entre as imagens */
+}
+
+div.gallery {
+  margin: 20px;
+  margin-top: 100px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Garante que a descrição fique no fundo da galeria */
+  background-color: #f1f1f1; /* Cor de fundo para a galeria */
+  border-radius: 15px; /* Bordas arredondadas */
+  overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+  flex-wrap: wrap;
+}
+
+div.gallery img {
+  width: 100%; /* Faz com que a imagem ocupe toda a largura do item */
+  height: 430px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+div.gallery h2{
+  font-weight: normal;
+  font-size: 30px;
+  margin: 30px;
+}
+div.gallery p{
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.gallery h1{
+  margin-left: 30px;
+  font-size: 40px;
+}
+
+.bnt-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 20px;
+}
+
+.bnt {
+  margin: 20px;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.bnt.primary {
+  background-color: #960D0D;
+  border: none;
+  color: white;
+  width: 300px;
+  text-align: center;
+}
+
+.bnt.primary:hover{
+  background-color: white;
+  border: 4px solid #960D0D;
+  color:#960D0D;
 }
 
 footer {
