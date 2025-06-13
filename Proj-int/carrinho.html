@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Amplify</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body id="cor-body">
+        <nav class="navbar" id="cor-nav">
+            <a href="index.html"><img src="img/logoFundoPreto.png" alt="Logo Amplify" width="100"></a>
+            <div class="search-bar">
+                <input type="text" placeholder="O que está procurando?">
+            </div>
+            <section class="icones">
+                <a href="index.html">
+                    <img src="img/casa.png" alt="Notificações"> 
+                </a>
+                <a href="#">
+                    <img src="img/sino.png" alt="Notificações"> 
+                </a>
+                <a href="carrinho.html">
+                    <img src="img/carrinho-de-compras.png" alt="carrinho">
+                </a>
+                <a href="login.html" class="login">Login</a>
+            </section>
+        </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="teclas.html">Teclas</a></li>
+                <li><a href="cordas.html">Cordas</a></li>
+                <li><a href="som.html">Som</a></li>
+                <li><a href="percussao.html">Percussão</a></li>
+                <li><a href="sopro.html">Sopro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Voltar</a>
+        
+        <div class="progress-bar">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-text">Carrinho</div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step">
+                <div class="step-number inactive">2</div>
+                <div class="step-text inactive">Endereço</div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step">
+                <div class="step-number inactive">3</div>
+                <div class="step-text inactive">Pagamento</div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step">
+                <div class="step-number inactive">4</div>
+                <div class="step-text inactive">Entrega</div>
+            </div>
+        </div>
+        <div class="cart-content">
+            <div class="cart-items">
+                <h2>Carrinho</h2>
+                
+                <div class="cart-item">
+                    <img src="img/guitarra_vermelha.png" alt="Guitarra Elétrica Queen's" class="item-image">
+                    <div class="item-details">
+                        <div class="item-name">Guitarra Elétrica Queen's</div>
+                        <div class="item-color">🔴Vermelho</div>
+                        <div class="item-price">R$ 2275,99</div>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="decreaseQuantity(1)">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input" id="qty1">
+                        <button class="quantity-btn" onclick="increaseQuantity(1)">+</button>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="img/bateria.png" alt="Bateria Acústica Premium DX720" class="item-image">
+                    <div class="item-details">
+                        <div class="item-name">Bateria Acústica Premium DX720</div>
+                        <div class="item-color">⚫ Preto</div>
+                        <div class="item-price">R$ 3525,99</div>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="decreaseQuantity(2)">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input" id="qty2">
+                        <button class="quantity-btn" onclick="increaseQuantity(2)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <h3>Resumo do carrinho</h3>
+                
+                <div class="summary-row">
+                    <span class="summary-label">Itens (2)</span>
+                    <span class="summary-value price" id="subtotal">R$ 5.801,98</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span class="summary-label">Desconto</span>
+                    <span class="summary-value">R$ 500,00</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span class="summary-label">Frete</span>
+                    <span class="summary-value">R$ 50,00</span>
+                </div>
+                
+                <div class="summary-row total">
+                    <span class="summary-label">Total a pagar</span>
+                    <span class="summary-value price" id="total">R$ 5.351,98</span>
+                </div>
+            </div>
+            <a href="#endereco" class="bnt primary">Continuar Compra →</a>
+        </div>
+    </body>
+</html>
