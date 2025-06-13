@@ -160,8 +160,8 @@ li {
 }
 
 .icones img {
-  height: 26px;
-  width: 26px;
+  height: 22px;
+  width: 22px;
   transition: all 0.3s ease;
   filter: brightness(1);
 }
