@@ -466,7 +466,6 @@ div.gallery h1{
   transform: translateX(-5px);
 }
 
-        /* Header Styles */
 .top-section-about {
     background: url('img/fundo.png') center/cover no-repeat;
     min-height: 60vh;
@@ -481,11 +480,10 @@ div.gallery h1{
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
 
-/* Hero Section */
 .top-section-about h1 {
     text-align: center;
     color: white;
@@ -496,7 +494,6 @@ div.gallery h1{
     z-index: 2;
 }
 
-/* Floating Elements */
 .floating-elements {
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
@@ -533,7 +530,6 @@ div.gallery h1{
     50% { transform: translateY(-20px) rotate(180deg); }
 }
 
-/* Main Content */
 .about-content {
     padding: 4rem 2rem;
     max-width: 1200px;
@@ -1433,7 +1429,6 @@ div.gallery h1{
     box-shadow: 0 12px 35px rgba(150, 13, 13, 0.5);
 }
 
-/* Product Description */
 .product-description {
     background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
     border-radius: 20px;
@@ -1485,3 +1480,148 @@ div.gallery h1{
     line-height: 1.6;
     margin-bottom: 15px;
 }
+
+ .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        .contact-form-section {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-form-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #960D0D, #c41e3a);
+        }
+
+        .contact-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #960D0D;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(150, 13, 13, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #960D0D, #c41e3a);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(150, 13, 13, 0.3);
+            display: block;
+            margin: 30px auto 0;
+            min-width: 150px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(150, 13, 13, 0.5);
+            background: linear-gradient(45deg, #c41e3a, #960D0D);
+        }
+
+        .image-section {
+            position: relative;
+            height: 600px;
+            min-height: 500px;
+        }
+
+        .contact-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-image:hover {
+            transform: scale(1.02);
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 10%;
+            right: -10%;
+            width: 100px;
+            height: 100px;
+            background: rgba(150, 13, 13, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        .floating-elements:nth-child(2) {
+            top: 60%;
+            left: -10%;
+            width: 60px;
+            height: 60px;
+            animation-delay: -2s;
+        }
+
+        .floating-elements:nth-child(3) {
+            top: 80%;
+            right: 10%;
+            width: 80px;
+            height: 80px;
+            animation-delay: -4s;
+        }
