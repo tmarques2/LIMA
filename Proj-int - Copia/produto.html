@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Amplify</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="cor-body">
+        <nav class="navbar" id="cor-nav">
+            <a href="index.html"><img src="img/logoFundoPreto.png" alt="Logo Amplify" width="100"></a>
+            <div class="search-bar">
+                <input type="text" placeholder="O que está procurando?">
+            </div>
+            <section class="icones">
+                <a href="index.html">
+                    <img src="img/casa.png" alt="Notificações"> 
+                </a>
+                <a href="#">
+                    <img src="img/sino.png" alt="Notificações"> 
+                </a>
+                <a href="carrinho.html">
+                    <img src="img/carrinho-de-compras.png" alt="carrinho">
+                </a>
+                <a href="login.html" class="login">Login</a>
+            </section>
+        </nav>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="teclas.html">Teclas</a></li>
+                    <li><a href="cordas.html">Cordas</a></li>
+                    <li><a href="som.html">Som</a></li>
+                    <li><a href="percussao.html">Percussão</a></li>
+                    <li><a href="sopro.html">Sopro</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-container">
+            <div class="product-section">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image-container">
+                        <img src="img/bateria.png" alt="Bateria Acústica Premium DX720" class="main-image" id="mainImage">
+                    </div>
+                    
+                    <div class="thumbnail-container">
+                        <div class="thumbnail active">
+                            <img src="img/bateria.png" width='60' height='60' alt="Visão frontal">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="img/bateria.png" width='60' height='60'alt="Visão lateral">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="img/bateria.png" width='60' height='60'alt="Visão lateral">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="img/bateria.png" width='60' height='60'alt="Visão lateral">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 class="product-title">Bateria Acústica Premium DX720</h1>
+                    
+                    <div class="product-price">R$ 3.525,99</div>
+                    <div class="price-installments">ou 10x R$327,99</div>
+
+                    <div class="color-selection">
+                        <h4>Cor:</h4>
+                        <div class="color-options">
+                            <div class="color-option black selected" data-color="Preto"></div>
+                            <div class="color-option white" data-color="Branco"></div>
+                            <div class="color-option red" data-color="Vermelho"></div>
+                            <div class="color-option blue" data-color="Azul"></div>
+                        </div>
+                    </div>
+
+                    <div class="quantity-section">
+                        <h4>Quantidade:</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                            <div class="quantity-input" id="quantity"><p>1</p> </div>
+                            <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                        </div>
+                    </div>
+
+                    <div class="freight-calculator">
+                        <h4>Calcular Frete:</h4>
+                        <div class="freight-form">
+                            <input type="text" class="freight-input" placeholder="00000-000" maxlength="9" id="cepInput">
+                            <button class="freight-btn" onclick="calculateFreight()">OK</button>
+                        </div>
+                    </div>
+
+                    <section class="bnt-container">
+                        <a href="carrinho.html" class="bnt primary">Adicionar ao carrinho</a>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Product Description -->
+            <section class="product-description">
+                <h2 class="description-title">Descrição</h2>
+                <div class="description-content">
+                    <div>
+                        <h4>Conteúdo do Kit:</h4>
+                        <div class="specs-list">
+                            <p>1 Bumbo 22"</p>
+                            <p>1 Caixa 14"</p>
+                            <p>2 Tons (10" e 12")</p>
+                            <p>1 Surdo 16"</li>
+                            <p>1 Chimbal (Hi-Hat) com suporte</p>
+                            <p>1 Prato de ataque (Crash) com suporte</p>
+                            <p>1 Prato de condução (Ride) com suporte</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+       <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="img/logoFundoPreto.png" alt="Logo Amplify" width="150" height="150">
+                </div>
+                
+                <nav class="navigation">
+                    <a href="sobreNos.html" class="nav-link">Sobre Nós</a>
+                    <a href="#" class="nav-link">Pagamento</a>
+                    <a href="#" class="nav-link">Trabalhe Conosco</a>
+                    <a href="#" class="nav-link">Suporte</a>
+                    <a href="#" class="nav-link">Termos e Condições</a>
+                    <a href="#" class="nav-link">Contato</a>
+                </nav>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-icon" title="Instagram">📷</a>
+                    <a href="#" class="social-icon" title="Facebook">📘</a>
+                    <a href="#" class="social-icon" title="WhatsApp">💬</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">Amplify 2025 © Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
