@@ -39,68 +39,96 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <a href="index.html" class="back-btn">← Voltar</a>
-        
-        <div class="progress-bar">
-            <div class="step">
-                <div class="step-number">1</div>
-                <div class="step-text">Carrinho</div>
+
+    <div class="main-container">
+        <div class="checkout-container">
+            
+            <h1 class="page-title">Carrinho</h1>
+
+            <div class="progress-steps">
+                <div class="step active">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Carrinho</div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step inactive">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Endereço</div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step inactive">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Pagamento</div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step inactive">
+                    <div class="step-number">4</div>
+                    <div class="step-label">Entrega</div>
+                </div>
             </div>
-            <div class="step-connector"></div>
-            <div class="step">
-                <div class="step-number inactive">2</div>
-                <div class="step-text inactive">Endereço</div>
-            </div>
-            <div class="step-connector"></div>
-            <div class="step">
-                <div class="step-number inactive">3</div>
-                <div class="step-text inactive">Pagamento</div>
-            </div>
-            <div class="step-connector"></div>
-            <div class="step">
-                <div class="step-number inactive">4</div>
-                <div class="step-text inactive">Entrega</div>
-            </div>
-        </div>
-        <div class="cart-content">
-            <div class="cart-items">
-                <h2>Carrinho</h2>
+
+            <div class="cart-section">
+                
+                <div class="cart-header">
+                    <div>Item (2 itens)</div>
+                    <div>Quantidade</div>
+                    <div>Valor</div>
+                    <div></div>
+                </div>
+
                 
                 <div class="cart-item">
-                    <img src="img/guitarra_vermelha.png" alt="Guitarra Elétrica Queen's" class="item-image">
-                    <div class="item-details">
-                        <div class="item-name">Guitarra Elétrica Queen's</div>
-                        <div class="item-color">🔴Vermelho</div>
-                        <div class="item-price">R$ 2275,99</div>
+                    <div class="item-info">
+                        <div class="item-image"><img src="img/guitarra_vermelha.png"></div>
+                        <div class="item-details">
+                            <h3>Guitarra Elétrica Queen's</h3>
+                            <div class="item-color">
+                                <div class="color-dot color-vermelho"></div>
+                                <span>Vermelho</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="quantity-controls">
-                        <button class="quantity-btn" onclick="decreaseQuantity(1)">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input" id="qty1">
-                        <button class="quantity-btn" onclick="increaseQuantity(1)">+</button>
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity-display" id="qty-1">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                    <div class="item-price" id="price-1">R$ 2275,99</div>
+                    <div style="text-align: center;">
+                        <button style="background: none; border: none; font-size: 20px; cursor: pointer;">🗑️</button>
                     </div>
                 </div>
 
+                <!-- Cart Item 2 -->
                 <div class="cart-item">
-                    <img src="img/bateria.png" alt="Bateria Acústica Premium DX720" class="item-image">
-                    <div class="item-details">
-                        <div class="item-name">Bateria Acústica Premium DX720</div>
-                        <div class="item-color">⚫ Preto</div>
-                        <div class="item-price">R$ 3525,99</div>
+                    <div class="item-info">
+                        <div class="item-image"><img src="img/bateria.png"></div>
+                        <div class="item-details">
+                            <h3>Bateria Acústica Premium DX720</h3>
+                            <div class="item-color">
+                                <div class="color-dot color-preto"></div>
+                                <span>Preto</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="quantity-controls">
-                        <button class="quantity-btn" onclick="decreaseQuantity(2)">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input" id="qty2">
-                        <button class="quantity-btn" onclick="increaseQuantity(2)">+</button>
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity-display" id="qty-2">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                    <div class="item-price" id="price-2">R$ 3525,99</div>
+                    <div style="text-align: center;">
+                        <button style="background: none; border: none; font-size: 20px; cursor: pointer;">🗑️</button>
                     </div>
                 </div>
             </div>
+
             <div class="cart-summary">
-                <h3>Resumo do carrinho</h3>
+                <h3 class="summary-title">Resumo do carrinho</h3>
                 
                 <div class="summary-row">
                     <span class="summary-label">Itens (2)</span>
-                    <span class="summary-value price" id="subtotal">R$ 5.801,98</span>
+                    <span class="summary-value" id="subtotal">R$ 5.801,98</span>
                 </div>
                 
                 <div class="summary-row">
@@ -115,10 +143,15 @@
                 
                 <div class="summary-row total">
                     <span class="summary-label">Total a pagar</span>
-                    <span class="summary-value price" id="total">R$ 5.351,98</span>
+                    <span class="summary-value" id="total">R$ 5351,98</span>
                 </div>
             </div>
-            <a href="#endereco" class="bnt primary">Continuar Compra →</a>
+
+            <div class="action-buttons">
+                <a href="index.html" class="back-btn">← Voltar</a>
+                <a href="carrinho2.html" class="continue-btn">Continuar Compra →</a>
+            </div>
         </div>
+    </div>
     </body>
 </html>

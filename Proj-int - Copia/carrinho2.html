@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Amplify</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body id="cor-body">
+        <nav class="navbar" id="cor-nav">
+            <a href="index.html"><img src="img/logoFundoPreto.png" alt="Logo Amplify" width="100"></a>
+            <div class="search-bar">
+                <input type="text" placeholder="O que está procurando?">
+            </div>
+            <section class="icones">
+                <a href="index.html">
+                    <img src="img/casa.png" alt="Notificações"> 
+                </a>
+                <a href="#">
+                    <img src="img/sino.png" alt="Notificações"> 
+                </a>
+                <a href="carrinho.html">
+                    <img src="img/carrinho-de-compras.png" alt="carrinho">
+                </a>
+                <a href="login.html" class="login">Login</a>
+            </section>
+        </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="teclas.html">Teclas</a></li>
+                <li><a href="cordas.html">Cordas</a></li>
+                <li><a href="som.html">Som</a></li>
+                <li><a href="percussao.html">Percussão</a></li>
+                <li><a href="sopro.html">Sopro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="checkout-container">
+            <h1 class="page-title">Endereço</h1>
+            
+            <!-- Progress Steps -->
+            <div class="progress-steps">
+                <div class="step completed">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Carrinho</div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step active">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Endereço</div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step inactive">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Pagamento</div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step inactive">
+                    <div class="step-number">4</div>
+                    <div class="step-label">Entrega</div>
+                </div>
+            </div>
+
+            <!-- Address Form -->
+            <div class="address-section">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cep">CEP:</label>
+                            <input type="text" id="cep" name="cep" placeholder="00000-000">
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <div class="form-row full">
+                        <div class="form-group">
+                            <label for="rua">Rua:</label>
+                            <input type="text" id="rua" name="rua" placeholder="Digite o nome da rua">
+                        </div>
+                    </div>
+
+                    <div class="form-row half">
+                        <div class="form-group">
+                            <label for="numero">Número:</label>
+                            <input type="text" id="numero" name="numero" placeholder="123">
+                        </div>
+                        <div class="form-group">
+                            <label for="bairro">Bairro:</label>
+                            <input type="text" id="bairro" name="bairro" placeholder="Nome do bairro">
+                        </div>
+                    </div>
+
+                    <div class="form-row half">
+                        <div class="form-group">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Nome da cidade">
+                        </div>
+                        <div class="form-group">
+                            <label for="estado">Estado:</label>
+                            <input type="text" id="estado" name="estado" placeholder="SP">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <a href="carrinho.html" class="back-btn">
+                    ← Voltar
+                </a>
+                <a href="carrinho3.html" class="continue-btn">
+                    Continuar Compra →
+                </a>
+            </div>
+        </div>
+    </main>
+    </body>
+</html>
