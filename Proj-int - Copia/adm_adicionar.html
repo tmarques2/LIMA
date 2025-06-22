@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel Administrativo - Amplify</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&family=Limelight&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="admin-background">
+
+    <header class="admin-header">
+        <img src="img/logoFundoPreto.png" alt="Logo Amplify" class="admin-logo" />
+        <h1 class="admin-title">Painel Administrativo</h1>
+
+        <section class="admin-user-info">
+            <p>Bem-vindo, Admin</p>
+            <nav class="admin-avatar"><a href="login.html">A</a></nav>
+        </section>
+    </header>
+
+    <main class="admin-main-container">
+
+        <header>
+            <h2 class="admin-welcome">Adicionar Novo Produto</h2>
+            <p class="admin-subtitle">Cadastre um novo instrumento musical em sua loja</p>
+        </header>
+
+        <section class="admin-section-card" aria-labelledby="info-produto">
+            <h3 id="info-produto" class="admin-section-title">🎸 Informações do Produto</h3>
+
+            <form method="POST" action="/admin/produtos/adicionar" enctype="multipart/form-data">
+                <fieldset class="form-grid">
+                    <legend class="visually-hidden">Formulário de Cadastro de Produto</legend>
+
+                    <section class="form-group">
+                        <label for="productName">Nome do Produto</label>
+                        <input type="text" id="productName" name="productName" class="form-control" placeholder="Ex: Guitarra Fender Stratocaster" required />
+                    </section>
+
+                    <section class="form-group">
+                        <label for="category">Categoria</label>
+                        <select id="category" name="category" class="form-control" required>
+                            <option value="">Selecione uma categoria</option>
+                            <option value="guitarras">Teclas</option>
+                            <option value="baixos">Cordas</option>
+                            <option value="baterias">Som</option>
+                            <option value="teclados">Percussão</option>
+                            <option value="violoes">Sopro</option>
+                        </select>
+                    </section>
+
+                    <section class="form-group">
+                        <label for="price">Preço (R$)</label>
+                        <input type="number" id="price" name="price" class="form-control" placeholder="0.00" step="0.01" min="0" required />
+                    </section>
+
+                    <section class="form-group">
+                        <label for="stock">Estoque</label>
+                        <input type="number" id="stock" name="stock" class="form-control" placeholder="Quantidade disponível" min="0" required />
+                    </section>
+
+                    <section class="form-group">
+                        <label for="brand">Marca</label>
+                        <input type="text" id="brand" name="brand" class="form-control" placeholder="Ex: Fender, Gibson, Yamaha" required />
+                    </section>
+
+                    <section class="form-group">
+                        <label for="model">Modelo</label>
+                        <input type="text" id="model" name="model" class="form-control" placeholder="Ex: Stratocaster, Les Paul" />
+                    </section>
+
+                    <section class="form-group full-width">
+                        <label for="description">Descrição</label>
+                        <textarea id="description" name="description" class="form-control" placeholder="Descreva as características, especificações técnicas e detalhes do produto..." required></textarea>
+                    </section>
+
+                    <section class="form-group">
+                        <label for="condition">Condição</label>
+                        <select id="condition" name="condition" class="form-control" required>
+                            <option value="">Selecione a condição</option>
+                            <option value="novo">Novo</option>
+                            <option value="seminovo">Seminovo</option>
+                            <option value="usado">Usado</option>
+                        </select>
+                    </section>
+
+                    <section class="form-group">
+                        <label for="weight">Peso (kg)</label>
+                        <input type="number" id="weight" name="weight" class="form-control" placeholder="0.0" step="0.1" min="0" />
+                    </section>
+
+                    <section class="form-group full-width">
+                        <label for="productImage">Imagem do Produto</label>
+                        <input type="file" id="productImage" name="productImage[]" class="form-control" accept="image/*" multiple />
+                    </section>
+                </fieldset>
+
+                <section class="form-actions">
+                    <a href="adm_dashboard.html" class="admin-secondary-btn">◀ Cancelar</a>
+                    <button type="submit" class="admin-action-btn">✓ Adicionar Produto</button>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <aside class="admin-quick-actions" aria-label="Ações rápidas">
+        <a href="#productForm" class="admin-fab" title="Adicionar">➕</a>
+        <a href="/admin/chat" class="admin-fab" title="Chat">💬</a>
+        <a href="/admin/configuracoes" class="admin-fab" title="Configurações">⚙️</a>
+    </aside>
+
+</body>
+</html>

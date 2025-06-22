@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel Administrativo - Amplify</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&family=Limelight&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="admin-background">
+    <header class="admin-header">
+        <img src="img/logoFundoPreto.png" alt="Logo Amplify" class="admin-logo" />
+        <h1 class="admin-title">Painel Administrativo</h1>
+        <div class="admin-user-info">
+            <span>Bem-vindo, Admin</span>
+            <div class="admin-avatar"><a href="login.html">A</a></div>
+        </div>
+    </header>
+
+    <main class="admin-main-container">
+        <section aria-labelledby="dashboard-heading">
+            <h2 id="dashboard-heading" class="admin-welcome">Dashboard Administrativo</h2>
+            <p class="admin-subtitle">Gerencie sua loja de instrumentos musicais</p>
+
+            <section class="admin-stats-grid">
+                <article class="admin-stat-card">
+                    <span class="admin-stat-icon">🎸</span>
+                    <div class="admin-stat-number">28</div>
+                    <div class="admin-stat-label">Produtos Cadastrados</div>
+                </article>
+                <article class="admin-stat-card">
+                    <span class="admin-stat-icon">👥</span>
+                    <div class="admin-stat-number">47</div>
+                    <div class="admin-stat-label">Usuários Registrados</div>
+                </article>
+                <article class="admin-stat-card">
+                    <span class="admin-stat-icon">📦</span>
+                    <div class="admin-stat-number">35</div>
+                    <div class="admin-stat-label">Pedidos Pendentes</div>
+                </article>
+                <article class="admin-stat-card">
+                    <span class="admin-stat-icon">💰</span>
+                    <div class="admin-stat-number">R$ 10.320</div>
+                    <div class="admin-stat-label">Vendas do Mês</div>
+                </article>
+            </section>
+        </section>
+
+        <section class="admin-sections-grid">
+            <section class="admin-section-card" aria-labelledby="produtos-heading">
+                <h3 id="produtos-heading" class="admin-section-title">
+                    <span>🎵</span> Gerenciar Produtos
+                </h3>
+                <nav class="admin-actions-list">
+                    <a href="adm_adicionar.html" class="admin-action-btn"><span>➕</span> Adicionar Produto</a>
+                    <a href="#" class="admin-action-btn"><span>📝</span> Editar Produtos</a>
+                    <a href="#" class="admin-action-btn"><span>📊</span> Relatório de Estoque</a>
+                    <a href="#" class="admin-secondary-btn">Ver Todos os Produtos</a>
+                </nav>
+            </section>
+
+            <section class="admin-section-card" aria-labelledby="usuarios-heading">
+                <h3 id="usuarios-heading" class="admin-section-title">
+                    <span>👤</span> Gerenciar Usuários
+                </h3>
+                <nav class="admin-actions-list">
+                    <a href="#" class="admin-action-btn"><span>👥</span> Lista de Usuários</a>
+                    <a href="#" class="admin-action-btn"><span>🔒</span> Permissões</a>
+                    <a href="#" class="admin-action-btn"><span>📧</span> Enviar Newsletter</a>
+                    <a href="#" class="admin-secondary-btn">Relatório de Usuários</a>
+                </nav>
+            </section>
+
+            <section class="admin-section-card" aria-labelledby="pedidos-heading">
+                <h3 id="pedidos-heading" class="admin-section-title">
+                    <span>🛒</span> Gerenciar Pedidos
+                </h3>
+                <nav class="admin-actions-list">
+                    <a href="#" class="admin-action-btn"><span>📋</span> Pedidos Pendentes</a>
+                    <a href="#" class="admin-action-btn"><span>🚚</span> Rastreamento</a>
+                    <a href="#" class="admin-action-btn"><span>💳</span> Pagamentos</a>
+                    <a href="#" class="admin-secondary-btn">Histórico de Vendas</a>
+                </nav>
+            </section>
+
+            <section class="admin-section-card" aria-labelledby="configuracoes-heading">
+                <h3 id="configuracoes-heading" class="admin-section-title">
+                    <span>⚙️</span> Configurações
+                </h3>
+                <nav class="admin-actions-list">
+                    <a href="#" class="admin-action-btn"><span>🎨</span> Personalizar Site</a>
+                    <a href="#" class="admin-action-btn"><span>💸</span> Métodos de Pagamento</a>
+                    <a href="#" class="admin-action-btn"><span>📱</span> Configurações Gerais</a>
+                    <a href="#" class="admin-secondary-btn">Backup do Sistema</a>
+                </nav>
+            </section>
+        </section>
+
+        <section class="admin-section-card admin-recent-activity" aria-labelledby="atividade-heading">
+            <h3 id="atividade-heading" class="admin-section-title">
+                <span>📈</span> Atividade Recente
+            </h3>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Data</th>
+                        <th scope="col">Ação</th>
+                        <th scope="col">Usuário</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>14/06/2025 - 09:30</td>
+                        <td>Nova compra - Guitarra Fender</td>
+                        <td>João Silva</td>
+                        <td class="status-concluido">✅ Concluído</td>
+                    </tr>
+                    <tr>
+                        <td>14/06/2025 - 08:45</td>
+                        <td>Produto adicionado - Bateria Pearl</td>
+                        <td>Admin</td>
+                        <td class="status-sistema">ℹ️ Sistema</td>
+                    </tr>
+                    <tr>
+                        <td>13/06/2025 - 19:20</td>
+                        <td>Novo usuário cadastrado</td>
+                        <td>Maria Santos</td>
+                        <td class="status-pendente">⏳ Pendente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <aside class="admin-quick-actions" aria-label="Ações Rápidas">
+        <a href="adm_adicionar.html" class="admin-fab" title="Adicionar Produto">➕</a>
+        <a href="#" class="admin-fab" title="Mensagens">💬</a>
+        <a href="#" class="admin-fab" title="Configurações">⚙️</a>
+    </aside>
+
+    <aside class="admin-notification" aria-label="Notificação do sistema">
+        <strong>🔔 Notificação</strong><br />
+        3 novos pedidos aguardando processamento
+    </aside>
+
+</body>
+</html>

@@ -12,7 +12,7 @@
     <body id="cor-body">
         <nav class="navbar" id="cor-nav">
             <a href="index.html"><img src="img/logoFundoPreto.png" alt="Logo Amplify" width="100"></a>
-            <div class="search-bar">
+            <div class="buscar">
                 <input type="text" placeholder="O que está procurando?">
             </div>
             <section class="icones">
@@ -40,9 +40,8 @@
         </nav>
     </header>
 
-    <div class="main-container">
-        <div class="checkout-container">
-            
+    <main class="main-container">
+        <section class="checkout-container">
             <h1 class="page-title">Carrinho</h1>
 
             <div class="progress-steps">
@@ -67,91 +66,120 @@
                 </div>
             </div>
 
-            <div class="cart-section">
-                
-                <div class="cart-header">
-                    <div>Item (2 itens)</div>
-                    <div>Quantidade</div>
-                    <div>Valor</div>
-                    <div></div>
-                </div>
+            <section class="cart-section">
+            <header class="cart-header">
+                <span>Item (2 itens)</span>
+                <span>Quantidade</span>
+                <span>Valor</span>
+                <span></span>
+            </header>
 
-                
-                <div class="cart-item">
-                    <div class="item-info">
-                        <div class="item-image"><img src="img/guitarra_vermelha.png"></div>
-                        <div class="item-details">
-                            <h3>Guitarra Elétrica Queen's</h3>
-                            <div class="item-color">
-                                <div class="color-dot color-vermelho"></div>
-                                <span>Vermelho</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quantity-controls">
-                        <button class="quantity-btn">-</button>
-                        <span class="quantity-display" id="qty-1">1</span>
-                        <button class="quantity-btn">+</button>
-                    </div>
-                    <div class="item-price" id="price-1">R$ 2275,99</div>
-                    <div style="text-align: center;">
-                        <button style="background: none; border: none; font-size: 20px; cursor: pointer;">🗑️</button>
-                    </div>
-                </div>
+            <article class="cart-item">
+                <section class="item-info">
+                    <figure class="item-image">
+                        <img src="img/guitarra_vermelha.png" alt="Guitarra Elétrica Queen's" />
+                    </figure>
+                    <section class="item-details">
+                        <h3>Guitarra Elétrica Queen's</h3>
+                        <section class="item-color">
+                            <span class="color-dot color-vermelho"></span>
+                            <span>Vermelho</span>
+                        </section>
+                    </section>
+                </section>
+                <section class="quantity-controls">
+                    <button class="quantity-btn">-</button>
+                    <span class="quantity-display" id="qty-1">1</span>
+                    <button class="quantity-btn">+</button>
+                </section>
+                <section class="item-price" id="price-1">R$ 2275,99</section>
+                <section>
+                    <button aria-label="Remover item" style="background: none; border: none; font-size: 20px; cursor: pointer;">🗑️</button>
+                </section>
+            </article>
 
-                <!-- Cart Item 2 -->
-                <div class="cart-item">
-                    <div class="item-info">
-                        <div class="item-image"><img src="img/bateria.png"></div>
-                        <div class="item-details">
-                            <h3>Bateria Acústica Premium DX720</h3>
-                            <div class="item-color">
-                                <div class="color-dot color-preto"></div>
-                                <span>Preto</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quantity-controls">
-                        <button class="quantity-btn">-</button>
-                        <span class="quantity-display" id="qty-2">1</span>
-                        <button class="quantity-btn">+</button>
-                    </div>
-                    <div class="item-price" id="price-2">R$ 3525,99</div>
-                    <div style="text-align: center;">
-                        <button style="background: none; border: none; font-size: 20px; cursor: pointer;">🗑️</button>
-                    </div>
-                </div>
-            </div>
+            <article class="cart-item">
+                <section class="item-info">
+                    <figure class="item-image">
+                        <img src="img/bateria.png" alt="Bateria Acústica Premium DX720" />
+                    </figure>
+                    <section class="item-details">
+                        <h3>Bateria Acústica Premium DX720</h3>
+                        <section class="item-color">
+                            <span class="color-dot color-preto"></span>
+                            <span>Preto</span>
+                        </section>
+                    </section>
+                </section>
+                <section class="quantity-controls">
+                    <button class="quantity-btn">-</button>
+                    <span class="quantity-display" id="qty-2">1</span>
+                    <button class="quantity-btn">+</button>
+                </section>
+                <section class="item-price" id="price-2">R$ 3525,99</section>
+                <section>
+                    <button aria-label="Remover item" style="background: none; border: none; font-size: 20px; cursor: pointer;">🗑️</button>
+                </section>
+            </article>
+        </section>
 
-            <div class="cart-summary">
-                <h3 class="summary-title">Resumo do carrinho</h3>
-                
-                <div class="summary-row">
-                    <span class="summary-label">Itens (2)</span>
-                    <span class="summary-value" id="subtotal">R$ 5.801,98</span>
-                </div>
-                
-                <div class="summary-row">
-                    <span class="summary-label">Desconto</span>
-                    <span class="summary-value">R$ 500,00</span>
-                </div>
-                
-                <div class="summary-row">
-                    <span class="summary-label">Frete</span>
-                    <span class="summary-value">R$ 50,00</span>
-                </div>
-                
-                <div class="summary-row total">
-                    <span class="summary-label">Total a pagar</span>
-                    <span class="summary-value" id="total">R$ 5351,98</span>
-                </div>
-            </div>
+        <aside class="cart-summary" aria-label="Resumo do carrinho">
+            <h3 class="summary-title">Resumo do carrinho</h3>
 
-            <div class="action-buttons">
-                <a href="index.html" class="back-btn">← Voltar</a>
-                <a href="carrinho2.html" class="continue-btn">Continuar Compra →</a>
-            </div>
-        </div>
-    </div>
+            <section class="summary-row">
+                <span class="summary-label">Itens (2)</span>
+                <span class="summary-value" id="subtotal">R$ 5.801,98</span>
+            </section>
+
+            <section class="summary-row">
+                <span class="summary-label">Desconto</span>
+                <span class="summary-value">R$ 500,00</span>
+            </section>
+
+            <section class="summary-row">
+                <span class="summary-label">Frete</span>
+                <span class="summary-value">R$ 50,00</span>
+            </section>
+
+            <section class="summary-row total">
+                <span class="summary-label">Total a pagar</span>
+                <span class="summary-value" id="total">R$ 5351,98</span>
+            </section>
+        </aside>
+
+        <nav class="action-buttons" aria-label="Ações do carrinho">
+            <a href="index.html" class="back-btn">← Voltar</a>
+            <a href="carrinho2.html" class="continue-btn">Continuar Compra →</a>
+        </nav>
+    </main>
+
+        <footer class="footer">
+            <section class="sessaoRodape">
+                <section class="containerRodape">
+                    <section class="logo">
+                        <img src="img/logoFundoPreto.png" alt="Logo Amplify" width="150" height="150">
+                    </section>
+                    
+                    <nav class="navegacaoRodape">
+                        <a href="sobreNos.html" class="links">Sobre Nós</a>
+                        <a href="#" class="links">Pagamento</a>
+                        <a href="#" class="links">Trabalhe Conosco</a>
+                        <a href="suporte.html" class="links">Suporte</a>
+                        <a href="#" class="links">Termos e Condições</a>
+                        <a href="#" class="links">Contato</a>
+                    </nav>
+                    
+                    <section class="icones">
+                        <a href="#" class="icone" title="Instagram"><img src="img/instagram.png" alt="Icone Instagram"></a>
+                        <a href="#" class="icone" title="Facebook"><img src="img/facebook.png" alt="Icone Facebook"></a>
+                        <a href="#" class="icone" title="WhatsApp"><img src="img/whatsapp.png" alt="Icone WhatsApp"></a>
+                    </section>
+                </section>
+                
+                <section class="fimRodape">
+                    <p class="copyright">Amplify 2025 © Todos os direitos reservados.</p>
+                </section>
+            </section>
+        </footer>
     </body>
 </html>

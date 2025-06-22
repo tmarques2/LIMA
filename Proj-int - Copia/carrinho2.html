@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Amplify</title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-    <body id="cor-body">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Amplify</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+</head>
+
+<body id="cor-body">
+    <header>
         <nav class="navbar" id="cor-nav">
-            <a href="index.html"><img src="img/logoFundoPreto.png" alt="Logo Amplify" width="100"></a>
-            <div class="search-bar">
+            <a href="index.html">
+                <img src="img/logoFundoPreto.png" alt="Logo Amplify" width="100">
+            </a>
+            <form class="buscar" role="search">
                 <input type="text" placeholder="O que está procurando?">
-            </div>
+            </form>
             <section class="icones">
-                <a href="index.html">
-                    <img src="img/casa.png" alt="Notificações"> 
-                </a>
-                <a href="#">
-                    <img src="img/sino.png" alt="Notificações"> 
-                </a>
-                <a href="carrinho.html">
-                    <img src="img/carrinho-de-compras.png" alt="carrinho">
-                </a>
+                <a href="index.html"><img src="img/casa.png" alt="Início"></a>
+                <a href="#"><img src="img/sino.png" alt="Notificações"></a>
+                <a href="carrinho.html"><img src="img/carrinho-de-compras.png" alt="Carrinho"></a>
                 <a href="login.html" class="login">Login</a>
             </section>
         </nav>
-    <header>
+
         <nav>
             <ul>
                 <li><a href="teclas.html">Teclas</a></li>
@@ -39,13 +37,12 @@
             </ul>
         </nav>
     </header>
-    <!-- Main Content -->
+
     <main class="main-container">
-        <div class="checkout-container">
+        <section class="checkout-container">
             <h1 class="page-title">Endereço</h1>
-            
-            <!-- Progress Steps -->
-            <div class="progress-steps">
+
+            <section class="progress-steps" aria-label="Etapas da compra">
                 <div class="step completed">
                     <div class="step-number">1</div>
                     <div class="step-label">Carrinho</div>
@@ -65,17 +62,15 @@
                     <div class="step-number">4</div>
                     <div class="step-label">Entrega</div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Address Form -->
-            <div class="address-section">
+            <section class="address-section">
                 <form>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="cep">CEP:</label>
                             <input type="text" id="cep" name="cep" placeholder="00000-000">
                         </div>
-                        <div></div>
                     </div>
 
                     <div class="form-row full">
@@ -107,18 +102,41 @@
                         </div>
                     </div>
                 </form>
-            </div>
+            </section>
 
-            <!-- Action Buttons -->
-            <div class="action-buttons">
-                <a href="carrinho.html" class="back-btn">
-                    ← Voltar
-                </a>
-                <a href="carrinho3.html" class="continue-btn">
-                    Continuar Compra →
-                </a>
-            </div>
-        </div>
+            <section class="action-buttons">
+                <a href="carrinho.html" class="back-btn">← Voltar</a>
+                <a href="carrinho3.html" class="continue-btn">Continuar Compra →</a>
+            </section>
+        </section>
     </main>
-    </body>
+        <footer class="footer">
+            <section class="sessaoRodape">
+                <section class="containerRodape">
+                    <section class="logo">
+                        <img src="img/logoFundoPreto.png" alt="Logo Amplify" width="150" height="150">
+                    </section>
+                    
+                    <nav class="navegacaoRodape">
+                        <a href="sobreNos.html" class="links">Sobre Nós</a>
+                        <a href="#" class="links">Pagamento</a>
+                        <a href="#" class="links">Trabalhe Conosco</a>
+                        <a href="suporte.html" class="links">Suporte</a>
+                        <a href="#" class="links">Termos e Condições</a>
+                        <a href="#" class="links">Contato</a>
+                    </nav>
+                    
+                    <section class="icones">
+                        <a href="#" class="icone" title="Instagram"><img src="img/instagram.png" alt="Icone Instagram"></a>
+                        <a href="#" class="icone" title="Facebook"><img src="img/facebook.png" alt="Icone Facebook"></a>
+                        <a href="#" class="icone" title="WhatsApp"><img src="img/whatsapp.png" alt="Icone WhatsApp"></a>
+                    </section>
+                </section>
+                
+                <section class="fimRodape">
+                    <p class="copyright">Amplify 2025 © Todos os direitos reservados.</p>
+                </section>
+            </section>
+        </footer>
+</body>
 </html>
